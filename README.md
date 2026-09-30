@@ -44,34 +44,16 @@ JavaScript (JS) es un lenguaje de programación interpretado, ligero y multiplat
 2. Accede a cualquier página web y pulsa `F12` o `Ctrl+Shift+I` para abrir las herramientas de desarrollo.
 3. Haz clic en la pestaña "Consola".
 4. Prueba los siguientes comandos uno por uno y observa el resultado:
-   ```js
-   2 + 2
-   console.log("¡Hola, mundo!")
-   let nombre = "Anita"
-   nombre
-   ```
+ <img width="720" height="647" alt="Parte 2" src="https://github.com/user-attachments/assets/466953d9-937c-403e-b69c-71bae68724f9" />
+
 
 ## Parte 3: Tu primer archivo HTML + JavaScript
 
 1. Crea una carpeta llamada `00JSyEntorno` dentro de tu espacio de trabajo.
 2. Dentro de esa carpeta, crea un archivo llamado `hola.html`.
 3. Escribe el siguiente código en `hola.html`:
-   ```html
-   <!DOCTYPE html>
-   <html lang="es">
-   <head>
-     <meta charset="UTF-8">
-     <title>Hola JS</title>
-   </head>
-   <body>
-     <script>
-       console.log("¡Hola, mundo!");
-       let nombre = "Ana";
-       console.log("Bienvenida, " + nombre);
-     </script>
-   </body>
-   </html>
-   ```
+   <img width="1903" height="976" alt="Parte 3" src="https://github.com/user-attachments/assets/98fd944b-68c6-4c35-8af2-7d8df632dd86" />
+
 4. Desde VSCode abre el archivo `hola.html` en tu navegador.
 5. Observa el resultado en la consola del navegador.
 
@@ -94,96 +76,59 @@ JavaScript (JS) es un lenguaje de programación interpretado, ligero y multiplat
 1. Crea un archivo llamado `formulario.html` en la misma carpeta `00JSyEntorno`.
 2. Crea un archivo llamado `formulario.js` en la misma carpeta `00JSyEntorno`.
 3. Escribe el siguiente código en `formulario.html`:
-4. ```html
-   <!DOCTYPE html>
-   <html lang="es">
-   <head>
-     <meta charset="UTF-8">
-     <title>Formulario de Saludo</title>
-   </head>
-   <body>
-     <h1>Formulario de Saludo</h1>
-     <form id="formulario">
-       <label for="nombreInput">Nombre:</label>
-       <input type="text" id="nombreInput" required>
-       <button type="submit">Saludar</button>
-     </form>
-     <p id="salida"></p>
-     
-     <script src="formulario.js"></script>
-   </body>
-   </html>
-   ```
+<img width="1912" height="976" alt="Parte 5" src="https://github.com/user-attachments/assets/85153bcf-4012-4db2-ba8c-37180f54091f" />
+
 5. Escribe el siguiente código en `formulario.js`:
-   ```js
-   document.addEventListener('DOMContentLoaded', function() {
-     document.getElementById('formulario').addEventListener('submit', function(event) {
-       event.preventDefault();
-       const nombre = document.getElementById('nombreInput').value;
-       document.getElementById('salida').textContent = '¡Hola, ' + nombre + '!';
-     });
-   });
-   ```
+  <img width="937" height="366" alt="Parte 5_2" src="https://github.com/user-attachments/assets/48bdbb54-b7c2-463f-aa67-ade39b7614ef" />
+
+   
 6. Desde VSCode abre `formulario.html` en tu navegador y prueba el formulario.
 
    
 ## Parte 6: Preguntas de reflexión
 
-1. ¿Qué hace `console.log`?
-  
-  Muestra en la consola el valor que se pasa como argumento.
+1. ¿Qué hace console.log?
+
+-Muestra mensajes o datos en la consola para comprobar qué está haciendo el código.
 
 2. ¿Qué ocurre si cambias el valor de la variable desde la consola? ¿Se puede?
-  
-  En este caso no se puede porque se ha declarado como constante.
+
+-Sí se puede si usa let. Si usa const, da error porque su valor es fijo y no se puede modificar.
 
 3. ¿Para qué sirve la consola del navegador en este contexto?
-  
-  La consola en el navegador es una herramienta integrada en los navegadores web que permite al desarrollador web ver errores, ejecutar código JavaScript y probar cambios en tiempo real
 
-4. Para qué sirve el archivo HTML en este contexto?
+-Para ver errores, probar cosas rápidamente y ver los mensajes del código.
 
-  El archivo HTML es un archivo de texto plano que contiene el código HTML de la página web. En nuestro caso añade comportamiento mediante JavaScript.
+4. ¿Para qué sirve el archivo HTML en este contexto?
+
+-Es la estructura visual de la página web (los botones, textos y elementos que ves en pantalla).
 
 5. ¿Por qué es una buena práctica separar el código JavaScript del HTML?
 
-Básicamente porque es más fácil de mantener el código JavaScript separado de HTML y mantener la página web limpia y organizada. Lo ideal es separar el código JavaScript en un archivo aparte y utilizar un archivo HTML para definir la estructura de la página web.
+-Para mantener el código ordenado, limpio y más fácil de arreglar o modificar.
 
-6. Por qué se llama Vanilla JavaScript?
+6. ¿Por qué se llama Vanilla JavaScript?
 
-  JavaScript sin frameworks o bibliotecas. Surgió como una "broma" para describir y defender el uso de JavaScript de forma básica, sin añadidos.
+-Porque es el JavaScript puro original, sin librerías ni complementos añadidos.
 
-7. Cuándo se usa JavaScript puro y cuándo se usan frameworks o librerías como REACT?
+7. ¿Cuándo se usa JavaScript puro y cuándo frameworks como React?
 
-Se usan librerías como React para aplicaciones web grandes y complejas con interfaces muy interactivas. JavaScript puro (Vanilla JS) se usa para páginas web sencillas, scripts pequeños o cuando necesitas el máximo rendimiento sin dependencias.
+-JavaScript puro para páginas sencillas; React para aplicaciones web grandes y complejas.
 
-8. Cómo se define una función en JS
+8. ¿Cómo se define una función en JS?
 
-Muy a groso modo, las funciones pueden definirse 
-- de forma clásica mediante la palabra reservada function o
-- de forma más compacta con la sintaxis más corta introducida en ECMAScript 2015 que utiliza una flecha (=>), las denominadas Arrow Functions.
+-Se puede escribir como function miFuncion() {} o usando una flecha const miFuncion = () => {}.
 
-9.  Sobre el código demuestra la diferencia entre let y const
+9. Diferencia entre let y const:
 
-``````JS
-//JavaScript
-let num1 = 11;
-num1 = 22;
+-Const se usa para valores que no van a cambiar, y let para variables cuyo valor sí va a cambiar.
 
-const num2 = 22;
-num2 = 33 //Uncaught TypeError: assignment to constant variable.
-```
+10. ¿Se puede evitar el uso de let?
 
+-En el ejemplo del contador no, porque necesitamos que el número cambie (aumente) constantemente.
 
-```
-10. Indica en el código:
-   1. Si puede evitarse el uso de let. Qué hace
-   Debe usar const en lugar de let, pero nunca usar variables sin declararlas porque se convierten en globales.
+11. ¿Cuántos eventos hay en el código y para qué sirven?
 
-   2. Cuántos eventos hay en el código, cuáles son y para qué sirven
-   
-   - DOMContentLoaded del objeto document: se ejecuta cuando el documento HTML está completamente cargado.
-   - submit del objeto formulario: se ejecuta cuando se envía un formulario.
-
+-Hay 1 evento (click). Sirve para detectar el momento exacto en que el usuario hace clic sobre un botón y activar una acción.
 
 
