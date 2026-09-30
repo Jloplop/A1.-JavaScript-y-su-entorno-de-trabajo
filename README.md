@@ -57,7 +57,7 @@ JavaScript (JS) es un lenguaje de programación interpretado, ligero y multiplat
 4. Desde VSCode abre el archivo `hola.html` en tu navegador.
 5. Observa el resultado en la consola del navegador.
 
-https://Jloplop.github.io/A1.-JavaScript-y-su-entorno-de-trabajo/00JSyEntorno/hola.html
+<a href="https://Jloplop.github.io/A1.-JavaScript-y-su-entorno-de-trabajo/00JSyEntorno/hola.html">Ir al hola</a>
 
 ## Parte 4: Experimenta
 
@@ -86,7 +86,7 @@ https://Jloplop.github.io/A1.-JavaScript-y-su-entorno-de-trabajo/00JSyEntorno/ho
    
 6. Desde VSCode abre `formulario.html` en tu navegador y prueba el formulario.
 
-https://Jloplop.github.io/A1.-JavaScript-y-su-entorno-de-trabajo/00JSyEntorno/formulario.html
+<a href="https://Jloplop.github.io/A1.-JavaScript-y-su-entorno-de-trabajo/00JSyEntorno/formulario.html">Ir al formulario</a>
 
    
 ## Parte 6: Preguntas de reflexión
